@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/main_scene"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#fafafa"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="20dp"
+        android:elevation="8dp"
+        app:cardElevation="15dp"
+        app:cardUseCompatPadding="true"
+
+        android:outlineSpotShadowColor="#d50000">
+
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="24dp">
+
+            <TextView
+                android:paddingTop="8dp"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MotionLayOut with Youtube Player View"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:paddingTop="8dp"
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YouTube Android Player API"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+            <TextView
+                android:paddingTop="8dp"
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The YouTube Android Player API enables you to incorporate video playback functionality into your Android applications. The API defines methods for loading and playing YouTube videos (and playlists) and for customizing and controlling the video playback experience.
+
+Using the API, you can load or cue videos into a player view embedded in your application's UI. You can then control playback programmatically. For example, you can play, pause, or seek to a specific point in the currently loaded video.
+
+You can also register event listeners to get callbacks for certain events, such as the player loading a video or the player state changing. Finally, the API has helper functionality to support orientation changes as well as transitions to fullscreen playback."
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:paddingTop="8dp"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage motion and widget animation with MotionLayout"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:paddingTop="8dp"
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" MotionLayout is a layout type that helps you manage motion and widget animation in your app. MotionLayout is a subclass of ConstraintLayout and builds upon its rich layout capabilities. As part of the ConstraintLayout library, MotionLayout is available as a support library and is backwards-compatible to API level 14."
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="15dp"
+        android:outlineSpotShadowColor="#d50000"
+        >
+
+        <TextView
+            android:id="@+id/youTube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:drawableStart="@drawable/ic_video_label"
+            android:drawableLeft="@drawable/ic_video_label"
+            android:drawablePadding="10dp"
+            android:text="Youtube"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youTubePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
