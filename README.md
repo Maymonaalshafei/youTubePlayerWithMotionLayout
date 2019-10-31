@@ -14,7 +14,7 @@ youTubePlayerWithMotionLayout
  libs directory (you can access to libs directory when you change project from android to project style).
  
  - add Internet permission to manifest.xml file
- <uses-permission android:name="android.permission.INTERNET" />
+ ( <uses-permission android:name="android.permission.INTERNET" /> .. )
  
  
  2) motionLayout
